@@ -41,6 +41,7 @@ bitbake-layers add-layer ../meta-openembedded/meta-python
 bitbake-layers add-layer ../meta-openembedded/meta-multimedia
 bitbake-layers add-layer ../meta-openembedded/meta-networking
 bitbake-layers add-layer ../meta-riscv
+bitbake-layers add-layer ../meta-swupdate
 
 # fix the configuration
 echo "Creating auto.conf"
@@ -72,6 +73,7 @@ DISTRO_FEATURES:append = " opengl ptest multiarch wayland pam  systemd "
 DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 HOSTTOOLS_NONFATAL:append = " ssh"
+PREFERRED_PROVIDER_u-boot-fw-utils = "libubootenv"
 EOF
 
 echo "To build an image run"
