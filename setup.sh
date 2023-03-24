@@ -57,7 +57,6 @@ MACHINE ?= "${MACHINE}"
 # rootfs for debugging
 #IMAGE_GEN_DEBUGFS = "1"
 #IMAGE_FSTYPES_DEBUGFS = "tar.gz"
-EXTRA_IMAGE_FEATURES:append = " ssh-server-dropbear"
 EXTRA_IMAGE_FEATURES:append = " package-management"
 PACKAGECONFIG:append:pn-qemu-native = " sdl"
 PACKAGECONFIG:append:pn-nativesdk-qemu = " sdl"
@@ -69,7 +68,7 @@ require conf/distro/include/security_flags.inc
 
 INHERIT += "uninative"
 
-DISTRO_FEATURES:append = " opengl ptest multiarch wayland pam  systemd "
+DISTRO_FEATURES:append = " sysvinit opengl ptest multiarch wayland pam  systemd "
 DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 HOSTTOOLS_NONFATAL:append = " ssh"
