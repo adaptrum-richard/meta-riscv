@@ -7,10 +7,10 @@
   <default remote="openembedded" revision="master" />
 
   <project name="meta-riscv" remote="riscv" path="meta-riscv" revision="master" />
-  <project name="openembedded-core" remote="openembedded" path="openembedded-core" revision="master" />
-  <project name="bitbake" remote="openembedded" path="openembedded-core/bitbake" revision="master" />
-  <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" revision="master" />
-  <project name="meta-swupdate" remote="swupdate" path="meta-swupdate" revision="master" />
+  <project name="openembedded-core" remote="openembedded" path="openembedded-core" revision="c8b9196d8ae2452c36bc8c2863a3cca740b4999e" />
+  <project name="bitbake" remote="openembedded" path="openembedded-core/bitbake" revision="278bd2f1758b8af97552af8d23d16ffb5127a131" />
+  <project name="meta-openembedded" remote="openembedded" path="meta-openembedded" revision="edea484f2dee3e4d7101b14f4a22d28be0291aa0" />
+  <project name="meta-swupdate" remote="swupdate" path="meta-swupdate" revision="43f4bf6821119cd3450bfed44d5a1d6cdde01b7d" />
 
 </manifest>
 

@@ -1,0 +1,10 @@
+[Unit]
+Description=Mount overlayfs
+RequiresMountsFor=/mnt
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/mount-overlayfs.sh
+
+[Install]
+WantedBy=multi-user.target
